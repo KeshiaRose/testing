@@ -10,9 +10,6 @@
       <url>https://keshiarose.github.io/testing/Username_Test</url>
     </source-location>
     <icon></icon>
-    <context-menu>
-      <configure-context-menu-item />
-    </context-menu>
   </dashboard-extension>
   <resources>
     <resource id="name">
