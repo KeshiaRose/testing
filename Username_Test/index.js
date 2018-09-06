@@ -5,7 +5,7 @@
 })();
 
 function loadUser() {
-    tableau.extensions.dashboardContent.dashboard.worksheets[0].getSummaryDataAsync().then(data => {
+    tableau.extensions.dashboardContent.dashboard.worksheets[0].getSummaryDataAsync().then(dataTable => {
         let el = document.getElementById('user');
         let field = dataTable.columns.find(column => column.fieldName === 'Username');
         let list = [];
