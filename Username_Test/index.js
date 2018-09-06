@@ -1,5 +1,5 @@
 (function() {
-    tableau.extensions.initializeAsync({ 'configure': configure }).then(() => {
+    tableau.extensions.initializeAsync().then(() => {
         loadUser();
     });
 })();
