@@ -39,7 +39,7 @@
         });
 
         function configure() {
-            const popupUrl = `${window.location.origin}/config`
+            // const popupUrl = `${window.location.origin}/config`
             const popupUrl = (window.location.origin.includes('localhost')) ? `${window.location.origin}/config` : `${window.location.origin}/testing/AddressMapper/config`;
             const payload = '';
             window.tableau.extensions.ui.displayDialogAsync(popupUrl, payload, {
