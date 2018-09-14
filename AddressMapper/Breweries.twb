@@ -1,0 +1,469 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20182.18.0627.2230                               -->
+<workbook original-version='18.1' source-build='2018.2.0 (20182.18.0627.2230)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <Extensions />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (Breweries)' inline='true' name='federated.03xozfb0lrfa1n15osymp1gp8yk1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Breweries' name='excel-direct.1dxsaqc0kiv4pq12df6b81mzggju'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/krose/Desktop/DevPlat/Customers/Google Maps/Breweries.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1dxsaqc0kiv4pq12df6b81mzggju' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:G4:no:A1:G4:0' header='yes' outcome='6'>
+            <column datatype='string' name='Brewery' ordinal='0' />
+            <column datatype='string' name='Street' ordinal='1' />
+            <column datatype='string' name='City' ordinal='2' />
+            <column datatype='string' name='State' ordinal='3' />
+            <column datatype='string' name='Zip' ordinal='4' />
+            <column datatype='string' name='Country' ordinal='5' />
+            <column datatype='string' name='Concat' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Brewery</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Brewery]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Brewery</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Street</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Street]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Street</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Zip]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Zip</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Concat</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Concat]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Concat</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G4:no:A1:G4:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[Zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.515221' measure-ordering='alphabetic' measure-percentage='0.484779' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Breweries'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Breweries)' name='federated.03xozfb0lrfa1n15osymp1gp8yk1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03xozfb0lrfa1n15osymp1gp8yk1'>
+            <column datatype='string' name='[Brewery]' role='dimension' type='nominal' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[Concat]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[Street]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+            <column-instance column='[Brewery]' derivation='None' name='[none:Brewery:nk]' pivot='key' type='nominal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Concat]' derivation='None' name='[none:Concat:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Street]' derivation='None' name='[none:Street:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Zip]' derivation='None' name='[none:Zip:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='60' />
+            <format attr='cell-h' value='40' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.03xozfb0lrfa1n15osymp1gp8yk1].[none:Brewery:nk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.03xozfb0lrfa1n15osymp1gp8yk1].[none:Brewery:nk]' />
+              <lod column='[federated.03xozfb0lrfa1n15osymp1gp8yk1].[none:City:nk]' />
+              <lod column='[federated.03xozfb0lrfa1n15osymp1gp8yk1].[none:Country:nk]' />
+              <lod column='[federated.03xozfb0lrfa1n15osymp1gp8yk1].[none:State:nk]' />
+              <lod column='[federated.03xozfb0lrfa1n15osymp1gp8yk1].[none:Street:nk]' />
+              <lod column='[federated.03xozfb0lrfa1n15osymp1gp8yk1].[none:Zip:nk]' />
+              <lod column='[federated.03xozfb0lrfa1n15osymp1gp8yk1].[none:Concat:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.03xozfb0lrfa1n15osymp1gp8yk1].[none:Brewery:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='8427' id='1' name='Breweries' w='99318' x='341' y='562'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='90449' id='3' param='[com.tableau.extensions.addressmapper].[0.7.0].[http://localhost:8080]' type='dashboard-object' w='99318' x='341' y='8989'>
+            <add-in add-in-id='com.tableau.extensions.addressmapper' extension-url='http://localhost:8080' extension-version='0.7.0' instance-id='E8663157847044EA8950115F55747200'>
+              <instance-settings>
+                <setting key='column' value='Concat' />
+                <setting key='configured' value='true' />
+                <setting key='worksheet' value='Breweries' />
+              </instance-settings>
+              <type-settings>
+                <dashboard />
+              </type-settings>
+            </add-in>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Breweries'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.03xozfb0lrfa1n15osymp1gp8yk1].[none:Brewery:nk]</field>
+            <field>[federated.03xozfb0lrfa1n15osymp1gp8yk1].[none:Concat:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Breweries'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='44' name='Breweries' width='184'>
+      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
+      Zoc4EH9JpWAAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFbklEQVR4nO3bWU8bZxiG4ccLtsFgGxswtutAISxJgdI0ixSpqqL2rL+1fyE5ihpIoiyQ
+      QFgKBMISCBiwAbO5J23VqK0qNW1c+tzXmU9G73zS7Zlvxg7UarWaAFPBeg8A1BMBwBoBwBoB
+      wBoBwFr4tx/mpidUKlcVbU5pePDy3zrgyeGeyqcRtbbE/pEBgX/TewEsr73VnTvf6N7du9pJ
+      RLVROVJ7R6eWZ18qkmhXUySorks5PXk2q75CUqfxNs1PPleiI69Yg3RS2VVrOqNqQ0SLc9Pa
+      2D7QtWuf6emjJ0plC+r7tFiv8wT+0HsBnFUrejg+psppQKXVJVXbB1VdmdRCqaa96THdutKl
+      F+V9vdk70PHBrpoCsyqpWdNjY+rOp9Q/dEux6rIWKzG9evCDuvMZjT0OaW/vUJl8+M9mAOrm
+      d3uAQCik06MjnSukbLZNyWxBLQ3S0PDnGhge0v3xCd2+FNdKuaZcoagG1TQ8MqJAJK6OdMsv
+      R1EhX1AkWVB/d6c60i2ampr6yKcG/LUAb4LhjKdAsEYAsPbrzrRWq6lcLtdzFuCjYw8Aa9wC
+      wRoBwBoBwBoBwBoBwBoBXCDHB3s6PDmv9xj/K/xC7QNV387q+wev9dX1IZU2lpTJFrS8vKzL
+      A/2am5xRrSGgWDypQrpJC282Ndhb0MTsirJtaT1+9EBff/udopUl3Z3aVWssrP7uDpWPQ6od
+      lRRuyaglFtHuzrYuFTu0tVNWPH6ixzPzyuU+Ueh4V6u7Vd2+Pqr5qefa2q+qu7tLSwsLKvYO
+      KteWrPfy/OdxBfhgAfVfHVG+Pan96rnWFudUC4a0+XZFzam8YuFGHe2/09Lapkb6OzXx7IU6
+      e66qXCprYGBAnZmkpKAGrg4pEjrX69dr6i6mNPVqQdvvdrSxvqLD8jvdu/9cwaMtbe+UlC4O
+      aH9rVZu7VUV//grb3q/q5s0bqqwvq++LG1pdnKvrqlwUXAE+UCieVj4cVSAYVm9Pj1JNDXr6
+      ck6p1qyCtZjOT6M6PUspGpKezaxreHRYp9EGxXNZVfY3tbG9p0SiTdsvZ5RpzymdaFI0mtBA
+      X5dC8aQyjdJ5Y0qR5nWlMi1qVExn4ajOggVtrq9ocn5VX46OamiwRw/HH6qru0uzT8ZV7L1S
+      76W5EHgTfGHV9GbpR51HEirm2us9zIVFALDGHgDWCADWCADWCADW+EMMrPEUCNa4BYI1AoA1
+      AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1
+      AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1
+      AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1
+      AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1
+      AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1
+      AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1
+      AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1
+      AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1
+      AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoC1nwAQtzd3UT2kagAA
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+  <referenced-extensions>
+    <referenced-extension>
+      <manifest manifest-version='0.1'>
+        <dashboard-extension extension-version='0.7.0' id='com.tableau.extensions.addressmapper'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>Address Mapper</description>
+          <author email='krose@tableau.com' name='Keshia Rose' organization='Tableau' website='https://www.tableau.com' />
+          <min-api-version>0.9</min-api-version>
+          <source-location>
+            <url>http://localhost:8080</url>
+          </source-location>
+          <icon />
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+        </dashboard-extension>
+        <resources>
+          <resource id='name'>
+            <text locale='en_US'>Address Mapper</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='Dashboard 1' />
+      </referenced-views>
+    </referenced-extension>
+  </referenced-extensions>
+</workbook>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Configure Address Mapper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./tableau-extensions-1.latest.js"></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Worksheet:</p>
+    <select id='worksheet' onchange='populateCols()'>
+        <option value=''>No worksheets found!</option>
+    </select>
+    <p>Column:</p>
+    <select id='column'>
+        <option value=''>Select a worksheet</option>
+    </select>
+    <button onclick='submit()'>Map!</button>
+    <script>
+        window.tableau.extensions.initializeDialogAsync().then(() => {
+            populateWS();
+        });
+
+        function submit() {
+            window.tableau.extensions.settings.set('worksheet', document.getElementById('worksheet').value);
+            window.tableau.extensions.settings.set('column', document.getElementById('column').value);
+            window.tableau.extensions.settings.set('configured', 'true');
+            window.tableau.extensions.settings.saveAsync().then(() => {
+                window.tableau.extensions.ui.closeDialog('true');
+            });
+        }
+
+        function populateWS() {
+            let options = '';
+            tableau.extensions.dashboardContent.dashboard.worksheets.forEach(ws => {
+                options += `<option value='${ws.name}'>${ws.name}</option>`;
+            })
+            document.getElementById('worksheet').innerHTML = options;
+            populateCols();
+        }
+
+        function populateCols() {
+            if (document.getElementById('worksheet').value !== '') {
+                ws = tableau.extensions.dashboardContent.dashboard.worksheets.find(worksheet => worksheet.name === document.getElementById('worksheet').value)
+                ws.getSummaryDataAsync().then(dataTable => {
+                    let cols = [];
+                    for (let c of dataTable.columns) {
+                        cols.push(c.fieldName);
+                    }
+                    let options = '';
+                    cols.forEach(col => {
+                        options += `<option value='${col}'>${col}</option>`;
+                    })
+                    document.getElementById('column').innerHTML = options;
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>
