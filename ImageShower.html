@@ -32,8 +32,8 @@
             return vars;
         }
 
-        let charid = getUrlVars()["character"];
-        document.getElementById('showimage').src = `https://rickandmortyapi.com/api/character/avatar/${charid}.jpeg`
+        var charid = getUrlVars()["character"];
+        document.getElementById('showimage').src = "https://rickandmortyapi.com/api/character/avatar/" + charid + ".jpeg"
     </script>
 
 </body>
